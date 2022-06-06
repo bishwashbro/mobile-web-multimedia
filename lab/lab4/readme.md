@@ -1,0 +1,1 @@
+Name of five subjects and the marks of respective subject is taken from user and displayed using javascript.
