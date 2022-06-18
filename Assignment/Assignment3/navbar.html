@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="navbarstyle.css">
+    <link rel="stylesheet" href="assets/css/navbarstyle.css">
 </head>
 <body>
     <section id="navbar">
@@ -36,13 +36,29 @@
                     <svg id="bell-icon" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
                     </svg>
-                    <img src="home-img.jpg" alt="Picture of Bishwash">
+                    <img src="assets/images/home-img.jpg" alt="Picture of Bishwash">
                 </div>
                 
             </div>
         </nav>
 </section>
-<section id="body-content">
+<section>
+    <div class="ham__menu">
+        <!-- <img src="./asstes/close.svg" alt="" class="close" /> -->
+        <div class="ham__searchBar">
+            
+          <!--
+            <img class="search__icon" src="./asstes/task-nav-search.svg" alt="" />
+          -->
+          <input type="text" placeholder="Search" />
+        </div>
+        <ul class="ham__list">
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Calender</a></li>
+        </ul>
+      </div>
     
 </section>
 </body>

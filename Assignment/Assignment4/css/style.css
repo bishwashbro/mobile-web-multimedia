@@ -1,0 +1,60 @@
+
+*{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+.container{
+    height: 450px;
+    width: 350px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    overflow-y: auto;
+}
+#input{
+    height:50px;
+    width:100%;
+    border-radius: 5px;
+    background:rgb(250, 247, 247);
+    color:rgb(80, 44, 44);
+    padding: 0 10px;
+}
+#input::placeholder{
+    color:rgb(179, 171, 171);
+}
+ul li{
+    background-color: #eee;
+    color: #333;
+    height: 40px;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding-top:10px;
+    
+}
+ul input, #check-1{
+    cursor: pointer;
+    
+}
+li .material-icons{
+    cursor: pointer;
+    color: red;
+    float: right;
+}
+ul .checked{
+    background-color: lightgreen;
+    text-decoration: line-through;
+    transition: .2s;
+}
+
+
+
