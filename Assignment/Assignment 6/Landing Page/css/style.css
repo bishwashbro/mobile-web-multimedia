@@ -1,306 +1,128 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
-body {
-  background: #ffffff;
-  font-family: 'Montserrat', sans-serif;
+*{
   overflow-x: hidden;
+  margin:0%;
+  padding:0%;
+  box-sizing: border-box;
 }
-  /*---------------------------------------
-     TYPOGRAPHY              
-  -----------------------------------------*/
-
-  h1,h2,h3,h4,h5,h6 {
-    font-weight: bold;
-    line-height: inherit;
-  }
-
-  h1 {
-    color: #252525;
-    font-size: 3em;
-    line-height: 50px;
-  }
-
-  h2 {
-    color: #353535;
-    font-size: 2em;
-    padding-bottom: 10px;
-  }
-
-  h3 {
-    font-size: 1.5em;
-    margin-bottom: 0;
-  }
-
-  h3,
-  h3 a {
-    color: #454545;
-  }
-
-  p {
-    color: #757575;
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 24px;
-  }
-
+.top{
+  background-color: rgba(243, 241, 241, 0.842);
+  color:rgb(7, 7, 7);
+  padding: 15px;
+  height: 50px;
+  overflow-y: hidden;
+}
+.r1 i, .phone{
+  color: #ce3232;
+  margin-left: 5px;
   
-  /*---------------------------------------
-     GENERAL               
-  -----------------------------------------*/
+}
+.i .fa-phone{
+  font-size: 30px;
+}
+.navbar{
+  border: none;
+  background-color: transparent;
+  padding: 25px 0;
+  position:sticky;
+  top:0;
+}
+.navbar .navbar-brand {
+  color: #030000;
+  font-size: 18px;
+  font-weight: bold;
+}
+.navbar .nav-brand { /*when the page is scrolled it changes into white*/
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+}
+.navbar .navbar-brand span {
+  color: #ce3232;
+}
+.menu .bi-cart{
+  margin:10px;
+}
+.navbar-nav .nav-item a {
+  border-right:2px solid black;
+  height:30px;
+  overflow-y:hidden;
+}
+.navbar .menu li a {
+  font-size: 12px;
+  font-weight: bold;
+  color: #090909;
+  padding-right: 22px;
+  padding-left: 22px;
+  text-transform: uppercase;
+}
 
-  html{
-    -webkit-font-smoothing: antialiased;
-  }
-  /*In general, to create professional-looking graphics for the Web, you should use anti-aliased text . Anti-
-  aliasing is the slight blur used on curved edges to make smoother transitions between colors.*/
-  a {
-    color: #252525;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    text-decoration: none !important;
-  }
-  a:hover, a:active, a:focus {
-    color: #ce3232;
-    outline: none;
-  }
-  ::-webkit-scrollbar{
-    width: 8px;
-    height: 8px;
-  }
-  ::-webkit-scrollbar-thumb {
-    cursor: pointer;
-    background: #000000;
-  }
-  .section-title {
-    padding-bottom: 40px;
-  }
-  .section-title h2 {
-    margin: 0;
-  }
+.navbar .menu li a:hover {
+  background: transparent;
+  color: #ce3232;
+}
+.navbar .nav li.active > a {
+  background-color: transparent;
+  color: #ce3232;
+}
 
-  .section-title h4 {
-    color: #bfbdbd;
-    font-size: 10px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin-top: 0;
-  }
-  .overlay {
-    background: rgba(0,0,0,0.5);
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
+/*Login button before scrolling page*/  
+.navbar .menu button  {
+  background: #ce3232;
+  border-radius: 0;
+  border: 0;
+  color: #f9f9f9;
+  font-weight: normal;
+  padding: 10px 25px;
+  transition: 0.5s 0.2s; 
+}
+.navbar .menu button a{
+  color:#ffffff;
+  text-decoration: none;
+}
 
-  section {
-    position: relative;
-    padding: 100px 0;
-  }
+.navbar .menu button:hover{
+  font-weight:bold;
+}
 
-  #team, 
-  #menu,
-  #testimonial {
-    text-align: center;
-  }
+/*Navbar after scrolling*/
+.nav-scroll{
+  background-color:white ;
+}
 
-  .about-image img,
-  .team-thumb img {
-    width: 100%;
-  }
+/*slider*/
+#home h1 {
+  color: #ffffff;
+  padding-bottom: 30px;
+}
+
+#home h3 {
+  color: #f9f9f9;
+  font-size: 14px;
+  line-height: inherit;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0;
+}
+/*slider buttons*/
+#home .slide .carousel-inner .carousel-item .section-btn {
+  background-color:transparent;
+  color:#0b0b0b;
+  border: 1px solid #ffffff;
   
-  #google-map iframe {
-    border: 0;
-    width: 100%;
-    height: 390px;
-  }
-    /*---------------------------------------
-     BUTTONS               
-  -----------------------------------------*/
+}
 
-  .section-btn {
-    background: #ce3232;
-    border-radius: 0;
-    border: 0;
-    color: #f9f9f9;
-    font-size: inherit;
-    font-weight: normal;
-    padding: 10px 25px;
-    transition: 0.5s 0.2s;
-  }
-  /*---------------------------------------
-      MENU              
-  -----------------------------------------*/
+#home .slide .carousel-inner .carousel-item .section-btn:hover {
+  background-color:  #ce3232;
+  border:1px solid black;
+  color:#ffffff;
+}
 
-  .custom-navbar {
-    border: none;
-    margin-bottom: 0;
-    padding: 25px 0;
-  }
-  .custom-navbar .navbar-brand {
-    color: #f8f2f2;  /*must be ffffff*/
-    font-size: 18px;
-    font-weight: bold;
-  }
-  .custom-navbar .navbar-brand span {
-    color: #ce3232;
-  }
-  .top-nav-collapse {
-    background: #ffffff;
-  }
-  .custom-navbar .navbar-nav .navbar-nav-first {
-    margin-left: 8em;
-  }
-  .custom-navbar .navbar-nav .navbar-right li a {
-    padding-right: 12px;
-    padding-left: 12px;
-  }
-  .custom-navbar .navbar-nav .navbar-right .section-btn {
-    display: inline-block;
-    margin: 0.2em 0 0 1em;
-  }
-  .custom-navbar .navbar-nav.navbar-right .section-btn:hover {
-    background: #292929;
-    color: #ffffff;
-  }
-  .custom-navbar .navbar-nav.navbar-right .section-btn:focus {
-    color: #ffffff;
-  }
-  .custom-navbar .nav li a {
-    font-size: 12px;
-    font-weight: bold;
-    color: #ffffff;
-    padding-right: 22px;
-    padding-left: 22px;
-    text-transform: uppercase;
-  }
-  .custom-navbar .nav li a:hover {
-    background: transparent;
-    color: #ce3232;
-  }
-  .custom-navbar .navbar-nav > li > a:hover,
-  .custom-navbar .navbar-nav > li > a:focus {
-    background-color: transparent;
-  }
-  .custom-navbar .nav li.active > a {
-    background-color: transparent;
-    color: #ce3232;
-  }
-   /* .custom-navbar .navbar-toggle {  
-    border: none;
-    padding-top: 10px;
-  } 
-  .custom-navbar .navbar-toggle {
-    background-color: transparent;
-  } */
+/* sec3  cards*/
+.sec3 {
+  padding:5px;
+}
 
-  .custom-navbar .navbar-toggle .icon-bar {
-    background: #252525;
-    border-color: transparent;
-  } 
 
-  @media(min-width:768px) {
-    .custom-navbar {
-      border-bottom: 0;
-      background: 0 0; 
-    }
-    .custom-navbar.top-nav-collapse {
-        background: #ffffff;
-        -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
-        -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
-        box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
-        padding: 12px 0;
-    }
-    .top-nav-collapse .navbar-brand {
-        color: #454545;
-      }
-  
-      .top-nav-collapse .nav li a {
-        color: #575757;
-      }
-  
-      .top-nav-collapse .nav .section-btn a {
-        color: #ffffff;
-      }
-  }
- /*---------------------------------------
-      HOME              
-  -----------------------------------------*/
 
-  #home {
-    padding: 0;
-  }
-  #home h1 {
-    color: #ffffff;
-    padding-bottom: 30px;
-  }
-
-  #home h3 {
-    color: #f9f9f9;
-    font-size: 14px;
-    line-height: inherit;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin: 0;
-  }
-  @media (min-width: 768px) {
-    .slider .col-md-8 {
-      padding-left: 0;
-    }
-  }
-  /* .slider .owl-carousel {
-    position: absolute;
-    top: 50%;
-    right: 2em;
-    justify-content: center;
-  } */
-  .slider .caption {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: left;
-    background-color: rgba(20,20,20,0.2);
-    height: 100%;
-    color: #fff;
-    cursor: e-resize;
-    padding: 4em 0 0 2em;
-  }
-  .slider .item {
-    background-position: inherit;
-    background-repeat: no-repeat;
-    background-attachment: local;
-    background-size: cover;
-    height: 650px;
-  }
-  .slider .item-first {
-    background-image: url(../images/slider-image1.jpg);
-  }
-
-  .slider .item-second {
-    background-image: url(../images/slider-image2.jpg);
-  }
-
-  .slider .item-third {
-    background-image: url(../images/slider-image3.jpg);
-  }
-
-  .slider .item-second .section-btn {
-    background: #292929;
-  }
-
-  .slider .item-second .section-btn:hover {
-    background: #ffffff;
-  }
-  .slider .item-third .section-btn {
-    background: transparent;
-    border: 1px solid #ffffff;
-  }
-  .slider .item-third .section-btn:hover,
-  .slider .item-third .section-btn:focus {
-    background: #ce3232;
-    border-color: transparent;
-    color: #ffffff;
-  }
